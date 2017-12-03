@@ -36,11 +36,7 @@ When a student executes the code in jupyter notebook, the content of the noteboo
       "ename": "NameError",
       "evalue": "name 'np' is not defined",
       "traceback": [
-        "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-        "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
-        "\u001b[0;32m<ipython-input-1-c08330708e0a>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mx\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mnp\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mrandom\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mbinomial\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m20\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m0.5\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m10\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0mx\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-        "\u001b[0;31mNameError\u001b[0m: name 'np' is not defined"
-      ]
+        ]
     },
     "header": {
       "date": "2017-12-01T18:42:36.071580",
@@ -126,7 +122,7 @@ _Note: This phase did not use to save the "kernel_output" json in AWS DynamoDB_
 | Client | Jupyter.CodeCell.prototype.execute | Send the python code to IPython kernel and render the results received | Create a new json with cell code, cell metadata, notebook metadata, coursera user id, etc. |
 | Client | Jupyter.CodeCell.prototype.get_callbacks | Would get called as a callback once the above execute method would get completed. Responsible for rendering the output. | Will append the output received from the IPython kernel to the new json and send it to the method which would HTTP POST the new json to the AWS Lambda instance|
 
-_Note: The "kernel_output" was added in the 2nd phase. This phase did not involve extending the IPython kernel._ 
+_Note: The "kernel_output" was added in the 2nd phase. This phase did not involve extending the IPython kernel._   
 
 ## Analysis
 
@@ -163,9 +159,9 @@ We tested the tool called Clone Digger which is a tree based clone detection too
 ![3](https://github.com/anantmittal/markdown-reports/blob/master/images/7913.png)
 ![4](https://github.com/anantmittal/markdown-reports/blob/master/images/7914.png)  
 
-In this analysis, we compared two files "js_antlr.py" and "java_antlr.py"
+In this analysis, we have compared two files "js_antlr.py" and "java_antlr.py". The tool was able to detect three clones amongst both the files with the diff changes in red. 
 
-There are two dimensions of the mesh in Clone Digger: the minimal size of clones (set by --length-threshold parameter) and the maximum distance between sequences, which are reported as clones (set by --distance-threshold).
+There are two dimensions of the mesh in Clone Digger: the minimal size of clones (set by --length-threshold parameter) and the maximum distance between sequences, which are reported as clones (set by --distance-threshold). There are a bunch of other parameters that we can change to find the similarity between two python codes. 
 
 ## Research Questions
 Until now, if we wanted to have the snapshots of how a student has moved from attempting a problem on jupyter notebook to reaching the final solution, it was not possible. The logging extension enables the researchers to pull out such granular level data easily. These are the few research questions that can be raised now:
