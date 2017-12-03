@@ -6,7 +6,7 @@
 Professor Christopher Brooks runs a set of massive open online courses (MOOCs) under Applied  Data  Science  with  Python  Specialization on Coursera. The weekly assignments for the courses are on Jupyter Notebooks where the students need to solve the questions posted in each cell. 
 
 Below is a template of the weekly assignment:
-![1](https://github.com/anantmittal/logging_kernel/blob/v2/images/7911.png) 
+![1](https://github.com/anantmittal/markdown-reports/blob/master/images/7911.png) 
 
 The first few cells load the dataset in a dataframe after which there are different parts to the main question. Each cell below the question is where the students need to write their answer code in the form of a python definition.
 
@@ -151,9 +151,9 @@ Before we show the analysis, let's discuss the type of clones and the techniques
 
 We tested the tool called Clone Digger which is a tree based clone detection tool. Below is the type of analysis we can expect:
 
-![2](https://github.com/anantmittal/logging_kernel/blob/v2/images/7912.png)
-![3](https://github.com/anantmittal/logging_kernel/blob/v2/images/7913.png)
-![4](https://github.com/anantmittal/logging_kernel/blob/v2/images/7914.png)  
+![2](https://github.com/anantmittal/markdown-reports/blob/master/images/7912.png)
+![3](https://github.com/anantmittal/markdown-reports/blob/master/images/7913.png)
+![4](https://github.com/anantmittal/markdown-reports/blob/master/images/7914.png)  
 
 In this analysis, we compared two files "js_antlr.py" and "java_antlr.py"
 
