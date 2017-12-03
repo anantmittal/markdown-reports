@@ -149,7 +149,7 @@ Before we show the analysis, let's discuss the type of clones and the techniques
  We can learn more about clone detection tools in python from this link: <https://www.slideshare.net/valeriomaggio/clone-detection-in-python> 
  
 
-We tested the tool called Clone Digger which is a tree based clone detection tool. Below is the type of analysis we can expect:
+We tested the tool called Clone Digger which is a tree based clone detection tool. Please find below the analysis:
 
 ![2](https://github.com/anantmittal/markdown-reports/blob/master/images/7912.png)
 ![3](https://github.com/anantmittal/markdown-reports/blob/master/images/7913.png)
